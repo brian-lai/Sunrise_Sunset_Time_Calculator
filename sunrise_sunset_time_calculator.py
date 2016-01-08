@@ -11,16 +11,16 @@
 
 
 ########    Equation Set for Calculating Sunrise and Sunset Times in UTC    ########
-class Sunrise_Sunset_Calculator(object):
+class SunRiseSet(object):
     D_0 = 2400000.5
     MJD_JD2000 = 51544.5
 
     def __init__(self, latitude, longitude):
         """Initialize new Sunrise_Sunset_Calculator class object"""
-        self.label = "Sunrise_Sunset_Calculator"
+        self.name = "Sunrise Sunset Calculator"
         self.latitude = latitude
         self.longitude = longitude
-
+        return
 
 
 
