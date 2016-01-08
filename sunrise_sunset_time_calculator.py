@@ -1,12 +1,29 @@
-D_0 = 2400000.5
-MJD_JD2000 = 51544.5
-
-
+# -*- coding: utf-8 -*-
+# --------------------------------------------------------------------
+# Sunrise_Sunset_Calculator.py
+# Created on:   1/7/2016
+# Created by:   Brian Lai
+# Usage:        Calculates Sunrise and Sunset times
+# Description:  Calculates Sunrise and Sunset times based on location
+#               and determines length of time spent in darkness
+# --------------------------------------------------------------------
 
 
 
 ########    Equation Set for Calculating Sunrise and Sunset Times in UTC    ########
-class
+class Sunrise_Sunset_Calculator(object):
+    D_0 = 2400000.5
+    MJD_JD2000 = 51544.5
+
+    def __init__(self, latitude, longitude):
+        """Initialize new Sunrise_Sunset_Calculator class object"""
+        self.label = "Sunrise_Sunset_Calculator"
+        self.latitude = latitude
+        self.longitude = longitude
+
+
+
+
 
    def ipart(q):
         return modf(q)[1]
